@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [Default suite]]">
+  <test thread-count="5" name="Default test(failed)(failed)">
+    <classes>
+      <class name="com.acti.aq.testcasess.HomePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="verifyHomePageTitleTest"/>
+          <include name="tearDown"/>
+          <include name="ShorcutwindowTest"/>
+          <include name="LagoutTest"/>
+        </methods>
+      </class> <!-- com.acti.aq.testcasess.HomePageTest -->
+    </classes>
+  </test> <!-- Default test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Default suite]] -->

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [ActiTime Application Test Automation Test Suite]">
+  <listeners>
+    <listener class-name="com.qa.ExtentReportListner.Reporting"/>
+  </listeners>
+  <test thread-count="5" name="ActiTime App Test Cases(failed)">
+    <classes>
+      <class name="com.acti.aq.testcasess.LoginPageTest">
+        <methods>
+          <include name="loginPageTitleTest"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.acti.aq.testcasess.LoginPageTest -->
+    </classes>
+  </test> <!-- ActiTime App Test Cases(failed) -->
+</suite> <!-- Failed suite [ActiTime Application Test Automation Test Suite] -->
