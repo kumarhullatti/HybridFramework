@@ -88,3 +88,8 @@
 2020-07-14 11:42:10,308 [main] INFO com.acti.aq.testcasess.LoginPageTest - *****************ActiLogoImageTest passed*******************
 2020-07-14 11:43:02,406 [main] INFO com.acti.aq.testcasess.LoginPageTest - ******************Loginpage opens*******************
 2020-07-14 11:43:03,174 [main] INFO com.acti.aq.testcasess.LoginPageTest - *****************HomePage Opens*******************
+2020-07-15 19:56:11,681 [main] INFO com.acti.aq.testcasess.LoginPageTest - ******************Loginpage opens*******************
+2020-07-15 19:57:11,459 [main] INFO com.acti.aq.testcasess.LoginPageTest - ******************Loginpage opens*******************
+2020-07-15 19:57:11,949 [main] INFO com.acti.aq.testcasess.LoginPageTest - *****************ActiLogoImageTest passed*******************
+2020-07-15 19:57:58,484 [main] INFO com.acti.aq.testcasess.LoginPageTest - ******************Loginpage opens*******************
+2020-07-15 19:57:59,289 [main] INFO com.acti.aq.testcasess.LoginPageTest - *****************HomePage Opens*******************

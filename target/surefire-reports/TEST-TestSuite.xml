@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="132.95" tests="14" errors="0" skipped="6" failures="4">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="196.049" tests="15" errors="0" skipped="8" failures="3">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_231\jre\bin"/>
@@ -62,33 +62,37 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="verifyHomePageTitleTest" classname="com.acti.aq.testcasess.HomePageTest" time="3.27">
-    <failure message="Home page title not matched expected [ Enter Time-Track] but found []" type="java.lang.AssertionError">java.lang.AssertionError: Home page title not matched expected [ Enter Time-Track] but found []
-	at com.acti.aq.testcasess.HomePageTest.verifyHomePageTitleTest(HomePageTest.java:47)
+  <testcase name="setUp" classname="com.acti.aq.testcasess.HomePageTest" time="45.972">
+    <failure message="timeout: Timed out receiving message from renderer: 6.084&#10;  (Session info: chrome=83.0.4103.116)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;WIN7X64&apos;, ip: &apos;192.168.43.168&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50917}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 8410af7b5b76dcdea93ec8f9334f0fdf" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 6.084
+  (Session info: chrome=83.0.4103.116)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WIN7X64', ip: '192.168.43.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50917}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8410af7b5b76dcdea93ec8f9334f0fdf
+	at com.acti.aq.testcasess.HomePageTest.setUp(HomePageTest.java:36)
 </failure>
     <system-out><![CDATA[Before navigating to: 'http://localhost/login.do'
-Navigated to:'http://localhost/login.do'
-Trying to find Element By : By.name: username
-Found Element By : By.name: username
-Trying to find Element By : By.name: pwd
-Found Element By : By.name: pwd
-Trying to find Element By : By.xpath: //a[@id= 'loginButton']
-Found Element By : By.xpath: //a[@id= 'loginButton']
-Trying to click on: [[ChromeDriver: chrome on WINDOWS (5f52671c038ac6b59f3717ab2f35f07b)] -> xpath: //a[@id= 'loginButton']]
-Clicked on: [[ChromeDriver: chrome on WINDOWS (5f52671c038ac6b59f3717ab2f35f07b)] -> xpath: //a[@id= 'loginButton']]
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 27424
+    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 34605
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jul 14, 2020 11:41:17 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jul 15, 2020 7:55:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
+[1594823146.888][SEVERE]: Timed out receiving message from renderer: 6.084
+[1594823146.978][SEVERE]: Timed out receiving message from renderer: 6.084
 ]]></system-err>
   </testcase>
-  <testcase name="tearDown" classname="com.acti.aq.testcasess.HomePageTest" time="3.275">
-    <failure message="org.openqa.selenium.support.events.EventFiringWebDriver cannot be cast to org.testng.ITestResult" type="java.lang.ClassCastException">java.lang.ClassCastException: org.openqa.selenium.support.events.EventFiringWebDriver cannot be cast to org.testng.ITestResult
-	at com.acti.aq.testcasess.HomePageTest.tearDown(HomePageTest.java:64)
-</failure>
+  <testcase name="setUp" classname="com.acti.aq.testcasess.HomePageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="setUp" classname="com.acti.aq.testcasess.HomePageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="verifyHomePageTitleTest" classname="com.acti.aq.testcasess.HomePageTest" time="0">
+    <skipped message="timeout: Timed out receiving message from renderer: 6.084&#10;  (Session info: chrome=83.0.4103.116)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;WIN7X64&apos;, ip: &apos;192.168.43.168&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50917}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 8410af7b5b76dcdea93ec8f9334f0fdf"/>
   </testcase>
   <testcase name="tearDown" classname="com.acti.aq.testcasess.HomePageTest" time="0">
     <skipped/>
@@ -96,7 +100,10 @@ INFO: Detected dialect: W3C
   <testcase name="tearDown" classname="com.acti.aq.testcasess.HomePageTest" time="0">
     <skipped/>
   </testcase>
-  <testcase name="loginPageTitleTest" classname="com.acti.aq.testcasess.LoginPageTest" time="0.022">
+  <testcase name="tearDown" classname="com.acti.aq.testcasess.HomePageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="loginPageTitleTest" classname="com.acti.aq.testcasess.LoginPageTest" time="0.047">
     <failure message="expected [ctiTIME - Login] but found [actiTIME - Login]" type="java.lang.AssertionError">java.lang.AssertionError: expected [ctiTIME - Login] but found [actiTIME - Login]
 	at com.acti.aq.testcasess.LoginPageTest.loginPageTitleTest(LoginPageTest.java:35)
 </failure>
@@ -104,35 +111,29 @@ INFO: Detected dialect: W3C
 Navigated to:'http://localhost/login.do'
  INFO [main] (LoginPageTest.java:29)- ******************Loginpage opens*******************
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 39671
+    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 8667
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jul 14, 2020 11:41:35 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jul 15, 2020 7:55:52 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
-  <testcase name="verifyTaskPageTitleTest" classname="com.acti.aq.testcasess.TaskPageTest" time="0.027"/>
-  <testcase name="setUp" classname="com.acti.aq.testcasess.HomePageTest" time="0">
-    <skipped/>
-  </testcase>
-  <testcase name="setUp" classname="com.acti.aq.testcasess.HomePageTest" time="0">
-    <skipped/>
-  </testcase>
+  <testcase name="verifyTaskPageTitleTest" classname="com.acti.aq.testcasess.TaskPageTest" time="0.036"/>
   <testcase name="ShorcutwindowTest" classname="com.acti.aq.testcasess.HomePageTest" time="0">
-    <skipped message="org.openqa.selenium.support.events.EventFiringWebDriver cannot be cast to org.testng.ITestResult"/>
+    <skipped message="timeout: Timed out receiving message from renderer: 6.084&#10;  (Session info: chrome=83.0.4103.116)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;WIN7X64&apos;, ip: &apos;192.168.43.168&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50917}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 8410af7b5b76dcdea93ec8f9334f0fdf"/>
   </testcase>
-  <testcase name="ActiLogoImageTest" classname="com.acti.aq.testcasess.LoginPageTest" time="0.677"/>
-  <testcase name="createTask" classname="com.acti.aq.testcasess.TaskPageTest" time="21.178">
-    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;ext-gen598&quot;]&quot;}&#10;  (Session info: chrome=83.0.4103.116)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;WIN7X64&apos;, ip: &apos;192.168.43.168&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54049}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 55ff9f560d48f1128a44e09af3d19506&#10;*** Element info: {Using=xpath, value=//*[@id=&quot;ext-gen598&quot;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+  <testcase name="ActiLogoImageTest" classname="com.acti.aq.testcasess.LoginPageTest" time="0.441"/>
+  <testcase name="createTask" classname="com.acti.aq.testcasess.TaskPageTest" time="20.491">
+    <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;ext-gen598&quot;]&quot;}&#10;  (Session info: chrome=83.0.4103.116)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;WIN7X64&apos;, ip: &apos;192.168.43.168&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51048}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 372b767243cabc459cc1d628b359b39d&#10;*** Element info: {Using=xpath, value=//*[@id=&quot;ext-gen598&quot;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="ext-gen598"]"}
   (Session info: chrome=83.0.4103.116)
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'WIN7X64', ip: '192.168.43.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54049}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 55ff9f560d48f1128a44e09af3d19506
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51048}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 372b767243cabc459cc1d628b359b39d
 *** Element info: {Using=xpath, value=//*[@id="ext-gen598"]}
 	at com.acti.aq.testcasess.TaskPageTest.createTask(TaskPageTest.java:49)
 </failure>
@@ -144,37 +145,37 @@ Trying to find Element By : By.name: pwd
 Found Element By : By.name: pwd
 Trying to find Element By : By.xpath: //a[@id= 'loginButton']
 Found Element By : By.xpath: //a[@id= 'loginButton']
-Trying to click on: [[ChromeDriver: chrome on WINDOWS (55ff9f560d48f1128a44e09af3d19506)] -> xpath: //a[@id= 'loginButton']]
-Clicked on: [[ChromeDriver: chrome on WINDOWS (55ff9f560d48f1128a44e09af3d19506)] -> xpath: //a[@id= 'loginButton']]
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (372b767243cabc459cc1d628b359b39d)] -> xpath: //a[@id= 'loginButton']]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (372b767243cabc459cc1d628b359b39d)] -> xpath: //a[@id= 'loginButton']]
 Trying to find Element By : By.xpath: //a[@class="content tasks"]
 Found Element By : By.xpath: //a[@class="content tasks"]
-Trying to click on: [[ChromeDriver: chrome on WINDOWS (55ff9f560d48f1128a44e09af3d19506)] -> xpath: //a[@class="content tasks"]]
-Clicked on: [[ChromeDriver: chrome on WINDOWS (55ff9f560d48f1128a44e09af3d19506)] -> xpath: //a[@class="content tasks"]]
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (372b767243cabc459cc1d628b359b39d)] -> xpath: //a[@class="content tasks"]]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (372b767243cabc459cc1d628b359b39d)] -> xpath: //a[@class="content tasks"]]
 Trying to find Element By : By.xpath: //*[@id="gettingStartedShortcutsMenuCloseId"]
 Found Element By : By.xpath: //*[@id="gettingStartedShortcutsMenuCloseId"]
-Trying to click on: [[ChromeDriver: chrome on WINDOWS (55ff9f560d48f1128a44e09af3d19506)] -> xpath: //*[@id="gettingStartedShortcutsMenuCloseId"]]
-Clicked on: [[ChromeDriver: chrome on WINDOWS (55ff9f560d48f1128a44e09af3d19506)] -> xpath: //*[@id="gettingStartedShortcutsMenuCloseId"]]
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (372b767243cabc459cc1d628b359b39d)] -> xpath: //*[@id="gettingStartedShortcutsMenuCloseId"]]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (372b767243cabc459cc1d628b359b39d)] -> xpath: //*[@id="gettingStartedShortcutsMenuCloseId"]]
 Trying to find Element By : By.xpath: //*[text()="Add New Task"]
 Found Element By : By.xpath: //*[text()="Add New Task"]
-Trying to click on: [[ChromeDriver: chrome on WINDOWS (55ff9f560d48f1128a44e09af3d19506)] -> xpath: //*[text()="Add New Task"]]
-Clicked on: [[ChromeDriver: chrome on WINDOWS (55ff9f560d48f1128a44e09af3d19506)] -> xpath: //*[text()="Add New Task"]]
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (372b767243cabc459cc1d628b359b39d)] -> xpath: //*[text()="Add New Task"]]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (372b767243cabc459cc1d628b359b39d)] -> xpath: //*[text()="Add New Task"]]
 Trying to find Element By : By.xpath: //*[@class="item createNewTask ellipsis"]
 Found Element By : By.xpath: //*[@class="item createNewTask ellipsis"]
-Trying to click on: [[ChromeDriver: chrome on WINDOWS (55ff9f560d48f1128a44e09af3d19506)] -> xpath: //*[@class="item createNewTask ellipsis"]]
-Clicked on: [[ChromeDriver: chrome on WINDOWS (55ff9f560d48f1128a44e09af3d19506)] -> xpath: //*[@class="item createNewTask ellipsis"]]
+Trying to click on: [[ChromeDriver: chrome on WINDOWS (372b767243cabc459cc1d628b359b39d)] -> xpath: //*[@class="item createNewTask ellipsis"]]
+Clicked on: [[ChromeDriver: chrome on WINDOWS (372b767243cabc459cc1d628b359b39d)] -> xpath: //*[@class="item createNewTask ellipsis"]]
 Trying to find Element By : By.xpath: //*[@id="ext-gen598"]
 ]]></system-out>
-    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 32069
+    <system-err><![CDATA[Starting ChromeDriver 83.0.4103.39 (ccbf011cb2d2b19b506d844400483861342c20cd-refs/branch-heads/4103@{#416}) on port 17036
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Jul 14, 2020 11:42:16 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jul 15, 2020 7:57:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
   </testcase>
   <testcase name="LagoutTest" classname="com.acti.aq.testcasess.HomePageTest" time="0">
-    <skipped message="org.openqa.selenium.support.events.EventFiringWebDriver cannot be cast to org.testng.ITestResult"/>
+    <skipped message="timeout: Timed out receiving message from renderer: 6.084&#10;  (Session info: chrome=83.0.4103.116)&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;WIN7X64&apos;, ip: &apos;192.168.43.168&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_231&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50917}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: 8410af7b5b76dcdea93ec8f9334f0fdf"/>
   </testcase>
-  <testcase name="loginTest" classname="com.acti.aq.testcasess.LoginPageTest" time="0.74"/>
-  <testcase name="LagoutTest" classname="com.acti.aq.testcasess.TaskPageTest" time="0.825"/>
+  <testcase name="loginTest" classname="com.acti.aq.testcasess.LoginPageTest" time="0.841"/>
+  <testcase name="LagoutTest" classname="com.acti.aq.testcasess.TaskPageTest" time="1.044"/>
 </testsuite>

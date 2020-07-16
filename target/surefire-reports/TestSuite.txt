@@ -1,20 +1,23 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 14, Failures: 4, Errors: 0, Skipped: 6, Time elapsed: 132.95 sec <<< FAILURE! - in TestSuite
-verifyHomePageTitleTest(com.acti.aq.testcasess.HomePageTest)  Time elapsed: 3.27 sec  <<< FAILURE!
-java.lang.AssertionError: Home page title not matched expected [ Enter Time-Track] but found []
-	at com.acti.aq.testcasess.HomePageTest.verifyHomePageTitleTest(HomePageTest.java:47)
+Tests run: 15, Failures: 3, Errors: 0, Skipped: 8, Time elapsed: 196.049 sec <<< FAILURE! - in TestSuite
+setUp(com.acti.aq.testcasess.HomePageTest)  Time elapsed: 45.972 sec  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+timeout: Timed out receiving message from renderer: 6.084
+  (Session info: chrome=83.0.4103.116)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'WIN7X64', ip: '192.168.43.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:50917}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8410af7b5b76dcdea93ec8f9334f0fdf
+	at com.acti.aq.testcasess.HomePageTest.setUp(HomePageTest.java:36)
 
-tearDown(com.acti.aq.testcasess.HomePageTest)  Time elapsed: 3.275 sec  <<< FAILURE!
-java.lang.ClassCastException: org.openqa.selenium.support.events.EventFiringWebDriver cannot be cast to org.testng.ITestResult
-	at com.acti.aq.testcasess.HomePageTest.tearDown(HomePageTest.java:64)
-
-loginPageTitleTest(com.acti.aq.testcasess.LoginPageTest)  Time elapsed: 0.022 sec  <<< FAILURE!
+loginPageTitleTest(com.acti.aq.testcasess.LoginPageTest)  Time elapsed: 0.047 sec  <<< FAILURE!
 java.lang.AssertionError: expected [ctiTIME - Login] but found [actiTIME - Login]
 	at com.acti.aq.testcasess.LoginPageTest.loginPageTitleTest(LoginPageTest.java:35)
 
-createTask(com.acti.aq.testcasess.TaskPageTest)  Time elapsed: 21.178 sec  <<< FAILURE!
+createTask(com.acti.aq.testcasess.TaskPageTest)  Time elapsed: 20.491 sec  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="ext-gen598"]"}
   (Session info: chrome=83.0.4103.116)
@@ -22,8 +25,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'WIN7X64', ip: '192.168.43.168', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54049}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 55ff9f560d48f1128a44e09af3d19506
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:51048}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 372b767243cabc459cc1d628b359b39d
 *** Element info: {Using=xpath, value=//*[@id="ext-gen598"]}
 	at com.acti.aq.testcasess.TaskPageTest.createTask(TaskPageTest.java:49)
 
