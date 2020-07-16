@@ -26,7 +26,7 @@ public class LoginPageTest extends TestBase{
 		
 		initialization();
 		loginPage = new LoginPage();	
-		log.info("******************Loginpage open*******************");
+		log.info("******************Loginpage opens*******************");
 	}
 	
 	@Test(priority=1)
