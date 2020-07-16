@@ -38,7 +38,7 @@ public class TaskPageTest extends TestBase {
 	@Test(priority=1)
 	public void verifyTaskPageTitleTest(){
 		String homePageTitle = taskPage.verifyTaskPageTitle();
-		Assert.assertEquals(homePageTitle, "actiTIME - Task List","Home page title not matched");
+		Assert.assertEquals(homePageTitle, "actiTIME - Task List","Home page title  not matched");
 	}
 	
 	@Test(priority=2)
